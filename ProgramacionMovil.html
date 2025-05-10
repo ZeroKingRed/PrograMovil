@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Móvil</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="header">
+        <img src="Isay.jpg" alt="Logo Programación Móvil">
+        <img src="logoupq.png" alt="Logo Programación Móvil">
+        <h1>Programación Móvil</h1>
+        <p>Reglas, criterios de evaluación y fechas clave</p>
+    </div>
+<!--Los botones de cambiar el eso-->
+    <div class="nav-buttons">
+        <button onclick="showSection('reglamento')">Reglamento</button>
+        <button onclick="showSection('lineamientos')">Lineamientos</button>
+        <button onclick="showSection('fechas')">Fechas Importantes</button>
+        <button onclick="showSection('evaluacion')">Evaluación</button>
+        <button onclick="showSection('formas-trabajo')">Formas de Trabajo</button>
+        <button onclick="showSection('evidencias')">Evidencias</button>
+    </div>
+    
+    <div class="content">
+<!--Sección Reglamento-->
+        <div id="reglamento" class="section active">
+            <h2>Reglamento de la Materia</h2>
+            <div class="highlight">
+                <p><strong>Asistencia obligatoria:</strong> Se requiere 80% de asistencia para acreditar la materia.</p>
+                <p><strong>Faltas:</strong> 3 faltas = Final del parcial.</p>
+                <p><strong>Calificación máxima en final:</strong> 8</p>
+            </div>
+        </div>
+        
+<!--Sección Lineamientos-->
+        <div id="lineamientos" class="section">
+            <h2>Lineamientos de Classroom</h2>
+            <ul>
+                <li>Entregas fuera de tiempo: No válidas</li>
+                <li>No se aplican exámenes fuera de tiempo</li>
+                <li>Plagio de trabajos = 0 para todos los involucrados</li>
+                <li>Participación activa en orden</li>
+                <li>No entregar trabajos incompletos</li>
+            </ul>
+        </div>
+        
+<!--Sección Fechas Importantes-->
+        <div id="fechas" class="section">
+            <h2>Fechas Importantes del Ciclo</h2>
+            <table>
+                <tr>
+                    <th>Evento</th>
+                    <th>Fecha</th>
+                </tr>
+                <tr>
+                    <td>Primer Examen</td>
+                    <td>03-06-2025</td>
+                </tr>
+                <tr>
+                    <td>Segundo Examen</td>
+                    <td>08-07-2025</td>
+                </tr>
+                <tr>
+                    <td>Tercer Examen</td>
+                    <td>12-08-2025</td>
+                </tr>
+                <tr>
+                    <td>Examen Final</td>
+                    <td>18-08-2025</td>
+                </tr>
+            </table>
+        </div>
+        
+<!--Sección Evaluación-->
+        <div id="evaluacion" class="section">
+            <h2>Porcentajes de Evaluación</h2>
+            <h3>Por Parciales</h3>
+            <table>
+                <tr>
+                    <th>Evidencia</th>
+                    <th>1P</th>
+                    <th>2P</th>
+                    <th>3P</th>
+                </tr>
+                <tr>
+                    <td>Conocimiento</td>
+                    <td>40%</td>
+                    <td>40%</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Desempeño</td>
+                    <td>20%</td>
+                    <td>20%</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Producto</td>
+                    <td>30%</td>
+                    <td>20%</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Proyecto Integrador</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                    <td>50%</td>
+                </tr>
+            </table>
+        </div>
+        
+<!--Sección Formas de Trabajo-->
+        <div id="formas-trabajo" class="section">
+            <h2>Formas de Trabajo</h2>
+            <h3>Actividades</h3>
+            <p>Ubicadas en Classroom como: Actividad No. 1...n</p>
+            <ul>
+                <li>Investigaciones</li>
+                <li>Mapas mentales, de llaves, conceptuales</li>
+                <li>Crucigramas</li>
+                <li>Cuestionarios</li>
+                <li>Exposiciones</li>
+            </ul>
+            
+            <h3>Prácticas</h3>
+            <p>Ubicadas en Classroom como: Practica No. 1...n</p>
+            <ul>
+                <li>Reportes de prácticas</li>
+                <li>Trabajo en repositorio GitHub</li>
+                <li>Video evidencias</li>
+            </ul>
+            
+            <h3>Unidades de la Materia</h3>
+            <ol>
+                <li>Cómputo móvil</li>
+                <li>Aplicaciones móviles</li>
+                <li>Sensores móviles</li>
+            </ol>
+        </div>
+        
+<!--Sección Evidencias-->
+        <div id="evidencias" class="section">
+            <h2>Evidencias de Desempeño</h2>
+            <ul>
+                <li>Participación activa en clase</li>
+                <li>Trabajos en classroom</li>
+                <li>Entregas completas</li>
+                <li>Respetar tiempos de entrega</li>
+                <li>Presentación de trabajos con calidad universitaria</li>
+            </ul>
+            
+            <div class="highlight">
+                <h3>Requisitos para entregas en Classroom:</h3>
+                <ol>
+                    <li><strong>Portada:</strong> Diseño con logo UPQ, tema, datos del alumno, materia</li>
+                    <li><strong>Conclusión de aprendizaje:</strong> Descripción de lo aprendido durante el desarrollo de la actividad</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+    <script src="plantillaPM.js"></script>
+</body>
+</html>
